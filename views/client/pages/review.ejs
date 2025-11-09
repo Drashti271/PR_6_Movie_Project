@@ -1,0 +1,48 @@
+  <%- include('../partials/header.ejs') %>
+
+		<main class="main-content">
+			<div class="container">
+				<div class="page">
+					<div class="breadcrumbs">
+						<a href="/">Home</a>
+						<span>Movie Review</span>
+					</div>
+
+					<div class="filters">
+						<select name="#" id="#" placeholder="Choose Category">
+							<option value="#">Action</option>
+							<option value="#">Drama</option>
+							<option value="#">Fantasy</option>
+							<option value="#">Horror</option>
+							<option value="#">Adventure</option>
+						</select>
+						<select name="#" id="#">
+							<option value="#">2012</option>
+							<option value="#">2013</option>
+							<option value="#">2014</option>
+						</select>
+					</div>
+					<div class="movie-list">
+						<% data.forEach((movie)=>{ %>
+							<div class="movie">
+								<figure class="movie-poster"><img src="<%= movie.image %>" alt="#"figure>
+								<div class="movie-title"><a href="/single/<%= movie._id %>"><%= movie.title %></a></div>
+								<p><%= movie.description %></p>
+							</div>
+						<% }) %>
+					</div> <!-- .movie-list -->
+
+					<div class="pagination">
+						<a href="#" class="page-number prev"><i class="fa fa-angle-left"></i></a>
+						<span class="page-number current">1</span>
+						<a href="#" class="page-number">2</a>
+						<a href="#" class="page-number">3</a>
+						<a href="#" class="page-number">4</a>
+						<a href="#" class="page-number">5</a>
+						<a href="#" class="page-number next"><i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div> <!-- .container -->
+		</main>
+  <%- include('../partials/footer.ejs') %>
+		
