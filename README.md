@@ -130,27 +130,6 @@ bun run start
 4️⃣ Open in Browser
 http://localhost:5000
 
-🧪 Example Routes
-Route	Method	Description
-/	GET	Home page
-/about	GET	About page
-/review	GET	Reviews page
-/admin/add-movie	GET	Add movie form
-/admin/add-movie	POST	Submit movie form
-/admin/view-movies	GET	View all movies
-/admin/edit/:id	GET	Edit a movie
-/admin/delete/:id	GET	Delete a movie
-🧰 Dependencies (example)
-{
-  "dependencies": {
-    "express": "^4.19.2",
-    "mongoose": "^8.0.3",
-    "multer": "^1.4.5",
-    "dotenv": "^16.3.1",
-    "ejs": "^3.1.9"
-  }
-}
-
 👩‍💻 Future Enhancements
 
 User authentication for admin panel.
