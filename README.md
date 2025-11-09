@@ -10,19 +10,32 @@ It allows users or administrators to add, view, edit, and delete movie records, 
 movie-project/
 │
 ├── configs/             # Configuration files (e.g., database connection)
+
 ├── controllers/         # Route controller logic (client & admin side)
+
 ├── middlewares/         # Custom middleware (e.g., file upload handling)
+
 ├── models/              # Mongoose or ORM models (Movie schema, User schema)
+
 ├── node_modules/        # Installed dependencies
+
 ├── public/              # Static files (CSS, JS, images)
+
 ├── routers/             # Express route definitions
+
 ├── uploads/             # Uploaded movie posters or images
+
 ├── views/               # EJS templates (frontend and admin views)
+
 │
 ├── .env                 # Environment variables (DB URL, PORT, etc.)
+
 ├── bun.lock             # Bun dependency lock file (if using Bun instead of npm)
+
 ├── index.js             # Application entry point
+
 ├── package.json         # Project dependencies and scripts
+
 ├── package-lock.json    # Dependency lock file (npm)
 
 ⚙️ Technologies Used
